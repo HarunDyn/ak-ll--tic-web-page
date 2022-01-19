@@ -720,6 +720,7 @@ footer .copyRight img {
           align-items: center;
   border: 0.4px solid #e2e2e2;
   padding: 1rem 2rem;
+  padding-bottom: 0;
 }
 
 .card .productCard img {
@@ -795,9 +796,6 @@ footer .copyRight img {
 }
 
 .card .productCard .detailsCard .incele {
-  position: absolute;
-  width: 85%;
-  bottom: 0;
   background-color: #ff0202;
   color: white;
   padding: 1rem 0.5rem;
@@ -836,6 +834,28 @@ footer .copyRight img {
           flex-direction: column;
 }
 
+@media (max-width: 768px) {
+  .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1rem 0.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 0.3rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -852,13 +872,6 @@ body {
   bottom: 10px;
   right: 20px;
   width: 3rem;
-}
-
-@media (max-width: 600px) {
-  #wp {
-    bottom: 200px;
-    right: 40px;
-  }
 }
 
 #pagination ul {

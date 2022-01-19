@@ -14,6 +14,7 @@
         align-items: center;
         border: 0.4px solid rgb(226, 226, 226);
         padding: 1rem 2rem;
+        padding-bottom: 0;
 
         img {
             width: 13rem;
@@ -77,9 +78,7 @@
             }
 
             .incele {
-                position: absolute;
-                width: 85%;
-                bottom: 0;
+
                 background-color: $primary-color;
                 color: $white;
                 padding: 1rem 0.5rem;
@@ -115,7 +114,19 @@
 
         }
 
+    }
 
+    @include respond(medium) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 1rem 0.3rem;
+    }
 
+    @include respond(small) {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem 0.3rem;
     }
 }
