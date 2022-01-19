@@ -1,7 +1,7 @@
 const categories = document.querySelector(".categories");
 
 const Card = () => {
-  const [state, setState] = React.useState("Ayakkabı");
+  const [state, setState] = React.useState("Beyaz Eşya");
   const [data, setData] = React.useState(false);
 
   categories.addEventListener("click", (e) => {
