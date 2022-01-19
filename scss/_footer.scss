@@ -1,0 +1,121 @@
+footer {
+    background-color: rgb(250, 250, 250);
+    padding: 3rem 1rem 0 1rem;
+
+
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        border-bottom: 0.3px solid rgb(190, 189, 189);
+
+        .kurumsal {
+            @include footerLi
+        }
+
+        .müş-hiz {
+            @include footerLi
+        }
+
+        .yardım {
+            @include footerLi
+        }
+
+        .iletişim {
+            @include footerLi;
+
+            address {
+                margin-bottom: 1rem;
+            }
+
+            @include respond(small) {
+                address {
+                    display: none;
+                    margin-bottom: 0.2rem;
+                }
+
+                p {
+                    display: none
+                }
+            }
+        }
+
+        .takip {
+            @include footerLi;
+
+            .social-medias-top {
+                margin-bottom: 3rem;
+
+                a {
+
+                    color: black;
+                    margin-right: 1rem;
+                }
+
+            }
+
+            p {
+                margin-bottom: 0.5rem;
+            }
+
+            .input {
+                border: 0.5px solid gray;
+                display: flex;
+                justify-content: space-between;
+                background-color: $white;
+
+                input {
+                    padding: 0.4rem 0.2rem;
+                    border: none;
+                    outline: none;
+                }
+
+                div {
+                    padding: 0.4rem 0.2rem;
+                    background-color: $primary-color;
+                    color: $white;
+                }
+            }
+
+            @include respond(small) {
+                .social-medias-top {
+                    margin-bottom: 0;
+                }
+
+                .takip-social {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                }
+            }
+        }
+
+        @include respond(small) {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+
+    }
+
+
+    .copyRight {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.2rem 1rem;
+
+        img {
+            width: 2rem;
+
+        }
+    }
+
+
+
+    @include respond(small) {
+        padding: 1rem 0.3rem 0 0.3rem;
+    }
+
+
+}

@@ -1,0 +1,135 @@
+[
+    {
+        "Beyaz Eşya": [
+            {"imageUrl": "https://www.beko.com.tr/media/resize/7615110277_LO1_20210224_110507.png/1000Wx1000H/image.png",
+                "name": "Beko BM 6046 Bulaşık Makinesi",
+                "price": "6.319,00TL",
+                "hirePurchase" :"6*1053,16TL"
+            },
+            {"imageUrl": "https://www.beko.com.tr/media/resize/7615510277_LO1_20210310_091446.png/1000Wx1000H/image.png",
+                "name": "Beko BM 6046 I Bulaşık Makinesi",
+                "price": "6.669,00TL",
+                "hirePurchase" :"6*1111,15TL"
+            },
+            {"imageUrl": "https://www.beko.com.tr/media/resize/7622710277_LO1_20211220_211029.png/1000Wx1000H/image.png",
+                "name": "Beko BM 6046 BC Bulaşık Makinesi",
+                "price": "7.199,00TL",
+                "hirePurchase" :"6*1199,83TL"
+            },
+            {"imageUrl": "https://www.beko.com.tr/media/resize/7622110277_LO1_20211220_233716.png/1000Wx1000H/image.png",
+                "name": "Beko BM 6046 SC Bulaşık Makinesi",
+                "price": "7199,00TL",
+                "hirePurchase" :"6*1199,83TL"
+            },
+            {"imageUrl": "https://www.beko.com.tr/media/resize/7615610277_LO1_20210309_135633.png/1000Wx1000H/image.png",
+                "name": "Beko BM 5045 Bulaşık Makinesi",
+                "price": "5.489,00TL",
+                "hirePurchase" :"6*914,83TL"
+            },
+            {"imageUrl": "https://www.beko.com.tr/media/resize/7615810277_LO1_20210303_125429.png/1000Wx1000H/image.png",
+                "name": "Beko BM 4044 A Bulaşık Makinesi",
+                "price": "5.489,00TL",
+                "hirePurchase" :"6*914,83TL"
+            }
+        ],
+
+        "Ayakkabı": [
+            {"imageUrl": "https://floimages.mncdn.com/mnpadding/600/900/FFFFFF/media/catalog/product/21-11/24/101049688_f2.JPG?w=600",
+                "name": "WORTH 1PR Siyah Kız Çocuk Kar Botu",
+                "price": "219,00TL",
+                "hirePurchase" :"6*37,16TL"
+            },
+            {"imageUrl": "https://floimages.mncdn.com/mnpadding/600/900/FFFFFF/media/catalog/product/21-12/30/101045145_f2.JPG?w=600",
+                "name": "ORSON HI 1PR Siyah Kız Çocuk Sneaker Ayakkabı",
+                "price": "179,99TL",
+                "hirePurchase" :"6*29,85TL"
+            },
+            {"imageUrl": "https://floimages.mncdn.com/mnpadding/600/900/FFFFFF/media/catalog/product/21-11/19/dxtrswmn00504_kahverengi-1637343175.jpg?w=600",
+                "name": "504 SU & SOĞUK GEÇİRMEZ UNİSEX KAR BOTU",
+                "price": "322,00TL",
+                "hirePurchase" :"6*53,83TL"
+            },
+            {"imageUrl": "https://floimages.mncdn.com/mnpadding/600/900/FFFFFF/media/catalog/product/21-08/12/100535152_d1-1628768416.JPG?w=600",
+                "name": "REVOLUTION 5 Siyah Erkek Çocuk Koşu Ayakkabısı",
+                "price": "374,00TL",
+                "hirePurchase" :"6*62,83TL"
+            }
+        ],
+        "Televizyonlar &amp; Ses Sistemleri": [ 
+            {"imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/129686-9_large.jpg",
+                "name": "SAMSUNG QE 55Q60A 55' 138 CM 4K UHD SMART QLED TV,DAHİLİ UYDU ALICI",
+                "price": "14.199,00TL",
+                "hirePurchase" :"7*2028,16TL"
+            },
+            {"imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/grundig/thumb/126488_large.jpg",
+                "name": "GRUNDIG 55GFU9760 55' 139 CM 4K UHD ANDROID SMART TV, DAHİLİ UYDU ALICI",
+                "price": "9.419,00TL",
+                "hirePurchase" :"6*1570,85TL"
+            },
+            {"imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/tcl/thumb/128826-3_large.jpg",
+                "name": "TCL 50P725 50 126 CM 4K UHD ANDROID SMART TV,DAHİLİ UYDU ALICI",
+                "price": "7.419,00TL",
+                "hirePurchase" :"6*1270,85TL"
+            },
+            {"imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/sony/thumb/123287-1_large.jpg",
+                "name": "SONY XR65X90J 65 164 CM 4K UHD SMART GOOGLE TV,DAHİLİ UYDU ALICI",
+                "price": "22.419,00TL",
+                "hirePurchase" :"6*3670,85TL"
+            }
+        ],
+        "Ev Eşyaları": [
+            {"imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/xiaomi/thumb/115830_large.jpg",
+                "name": "Xiaomi Mi Vacuum Mop Essential Akıllı Robot Süpürge",
+                "price": "2.999,00TL",
+                "hirePurchase" :"7*428,16TL"
+            },
+            {"imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/philips/thumb/TeoriV2-107435_large.jpg",
+                "name": "PHILIPS FC6724/01 SPEEDPRO KABLOSUZ ŞARJLI DİKEY SÜPÜRGE",
+                "price": "2.399,00TL",
+                "hirePurchase" :"7*338,16TL"
+            },
+            {"imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/philips/thumb/103931-5_large.jpg",
+                "name": "PHILIPS XB9145/07 MARATHON ULTIMATE TOZ TORBASIZ SÜPÜRGE",
+                "price": "4.417,00TL",
+                "hirePurchase" :"7*638,16TL"
+            },
+            {"imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/philips/thumb/123248_large.jpg",
+                "name": "PHILIPS DST5020/30 BUHARLI ÜTÜ",
+                "price": "541,00TL",
+                "hirePurchase" :"7*75,16TL"
+            }
+        ],
+        
+        "Kişisel Bakım": [
+            {"imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/philips/thumb/v2-90868_large.jpg",
+                "name": "PHILIPS MG3720/15 3000 SERİSİ 7'Sİ1 ARADA ERKEK BAKIM KİTİ",
+                "price": "299,00TL",
+                "hirePurchase" :"7*43,16TL"
+            },
+            {"imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/braun/thumb/40704_large.jpg",
+                "name": "BRAUN EC 1 IONTEC SAÇ MAŞASI",
+                "price": "642,00TL",
+                "hirePurchase" :"7*92,16TL"
+            },
+            {"imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/fakir/thumb/TeoriV2-106118_large.jpg",
+                "name": "PHILIPS MG3720/15 3000 SERİSİ 7'Sİ1 ARADA ERKEK BAKIM KİTİ",
+                "price": "284,20TL",
+                "hirePurchase" :"7*40,80TL"
+            }
+        ],
+        
+        "Mutfak Gereçleri": [
+            {"imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/korkmaz/thumb/128143_large.jpg",
+                "name": "KORKMAZ A167-01 VİTA PLUS DÜDÜKLÜ TENCERE ROSAGOLD 6,0 LT",
+                "price": "679,00TL",
+                "hirePurchase" :"7*96,16TL"
+            },
+            {"imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/korkmaz/thumb/109560_large.jpg",
+                "name": "KORKMAZ A167-01 VİTA PLUS DÜDÜKLÜ TENCERE ROSAGOLD 6,0 LT",
+                "price": "726,00TL",
+                "hirePurchase" :"7*103,86TL"
+            }
+        ]
+        
+    }
+]

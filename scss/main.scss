@@ -1,0 +1,54 @@
+@import "config", "navbar", "footer", "product";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    max-height: 100vh;
+
+}
+
+#wp {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    width: 3rem;
+
+    @include respond(small) {
+        bottom: 200px;
+        right: 40px;
+    }
+}
+
+#pagination ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+
+    li {
+        list-style-type: none;
+        margin-right: 1rem;
+
+        a {
+            color: rgb(10, 10, 10);
+            padding: 0.5rem;
+
+
+        }
+
+        .active {
+            border-radius: 50%;
+            background-color: $primary-color;
+            color: $white;
+            padding: 0.5rem 0.8rem;
+        }
+    }
+}

@@ -1,0 +1,380 @@
+#nav-top {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid rgb(204, 201, 201);
+    background-color: $secondary-color;
+
+    .social-medias-top {
+        a {
+            color: rgb(71, 70, 70);
+            margin-right: 0.7rem;
+
+            i {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .social-medias-top-right {
+        a {
+            margin-right: 0.7rem;
+            color: rgb(109, 108, 108);
+            text-decoration: none;
+        }
+
+        #blog {
+            background-color: red;
+            padding: 0.6rem;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+
+#nav-bottom {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0.4rem;
+
+    .logo {
+        display: flex;
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+        #logo-icon i {
+            font-size: 3rem;
+            color: $primary-color;
+            margin-right: 0.7rem;
+        }
+
+        #logo-name {
+            color: $primary-color;
+
+            h1 {
+
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 0.5rem;
+
+            }
+        }
+
+        @include respond(medium) {
+            #logo-icon i {
+                font-size: 2rem;
+                color: $primary-color;
+                margin-right: 0.7rem;
+            }
+
+            #logo-name {
+                color: $primary-color;
+
+                h1 {
+
+                    font-size: 1rem;
+                }
+
+                p {
+                    font-size: 0.5rem;
+
+                }
+            }
+        }
+
+        @include respond(small) {
+            justify-content: center;
+            align-items: center;
+            padding: 0.3rem 0.4rem;
+
+            #logo-icon i {
+                font-size: 1.2rem;
+                color: $primary-color;
+                margin-right: 0.7rem;
+                margin-left: 1.5rem;
+            }
+
+            #logo-name {
+                display: flex;
+                color: $primary-color;
+
+                h1 {
+
+                    font-size: 1rem;
+
+                }
+
+                p {
+                    font-size: 0.5rem;
+
+                }
+            }
+        }
+
+
+    }
+
+    .search-input {
+        border: 0.3px solid rgb(189, 187, 187);
+        margin-right: 5rem;
+        display: flex;
+        justify-content: space-between;
+        width: 35rem;
+
+        input {
+            padding: 0.5rem;
+            background-color: $secondary-color;
+            border: none;
+            outline: none;
+
+        }
+
+        div {
+            display: inline-block;
+            padding: 1rem 0.5rem;
+            background-color: $primary-color;
+            color: $white;
+            cursor: pointer;
+
+        }
+
+        @include respond(medium) {
+            margin-right: 1rem;
+
+            input {
+
+                background-color: $secondary-color;
+                border: none;
+                outline: none;
+
+            }
+
+            div {
+                display: inline-block;
+                padding: 0.5rem 0.2rem;
+                background-color: $primary-color;
+                color: $white;
+                cursor: pointer;
+
+            }
+        }
+
+        @include respond(small) {
+
+            width: 95vw;
+
+        }
+    }
+
+    .sign-cart {
+        display: flex;
+
+        .sign-up {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            i {
+                margin-right: 0.5rem;
+                cursor: pointer;
+
+            }
+
+            #sign {
+                margin-right: 1rem;
+
+                p {
+                    font-size: 0.7rem;
+                    color: rgb(51, 50, 50);
+
+                }
+            }
+
+
+
+            @include respond(medium) {
+
+                margin-right: 1rem;
+                margin-left: 1rem;
+
+                i {
+                    font-size: 1rem;
+                    margin-right: 0.3rem;
+                    cursor: pointer;
+
+                }
+
+                #sign {
+                    margin-right: 0.2rem;
+                    width: 5rem;
+
+                    h3 {
+                        font-size: 1rem;
+                    }
+
+                    p {
+                        font-size: 0.5rem;
+                        color: rgb(51, 50, 50);
+
+                    }
+                }
+            }
+
+            @include respond(small) {
+
+                margin-left: 3rem;
+
+                i {
+                    font-size: 0.7rem;
+                    margin-right: 0.3rem;
+
+
+                }
+
+                #sign {
+
+                    h3 {
+                        font-size: 0.7rem;
+                    }
+
+                    p {
+                        font-size: 0.5rem;
+                        color: rgb(51, 50, 50);
+
+                    }
+                }
+
+                #down {
+                    display: none;
+                }
+            }
+
+
+        }
+
+        .cart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 7rem;
+            margin-left: 2rem;
+
+            i {
+                margin-right: 0.5rem;
+                font-size: 1rem;
+                cursor: pointer;
+
+            }
+
+            #cart {
+                margin-right: 1.3rem;
+                cursor: pointer;
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            @include respond(medium) {
+                margin-right: 4rem;
+
+                #cart {
+                    margin-right: 1rem;
+
+                    h3 {
+                        font-size: 1rem;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+
+                    }
+                }
+            }
+
+            @include respond(small) {
+                margin-right: 2rem;
+
+                #cart {
+                    margin-right: 0.5rem;
+
+                    h3 {
+                        font-size: 0.7rem;
+                    }
+
+                    p {
+                        font-size: 0.5rem;
+
+                    }
+                }
+            }
+
+
+        }
+
+        @include respond(small) {
+            justify-content: space-between;
+            padding: 0.3rem 0;
+        }
+
+    }
+
+    @include respond(small) {
+        display: flex;
+        flex-direction: column;
+        padding: 0.2rem 0.4rem;
+    }
+
+
+}
+
+.categories {
+    padding: 1rem 3rem;
+    background-color: $primary-color;
+
+    ul {
+
+        display: flex;
+        list-style-type: none;
+
+        li {
+            margin-right: 2rem;
+            color: $white;
+            cursor: pointer;
+        }
+    }
+
+    @include respond(medium) {
+        padding: 0.5rem 2rem;
+
+
+        ul {
+            justify-content: space-around;
+
+            li {
+                margin-right: 1rem;
+                font-size: 0.7rem;
+
+            }
+        }
+    }
+
+    @include respond(small) {
+        padding: 0.5rem 1rem;
+
+
+        ul {
+            justify-content: space-between;
+
+            li {
+                margin-right: 0.6rem;
+                font-size: 0.5rem;
+
+            }
+        }
+    }
+}
