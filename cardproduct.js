@@ -4,8 +4,6 @@ const Card = () => {
   const [state, setState] = React.useState("Ayakkabı");
   const [data, setData] = React.useState(false);
 
-  let array = [1, 2, 3, 4];
-
   categories.addEventListener("click", (e) => {
     let value = e.target.innerHTML;
     if (e.target.className === "category") {
@@ -18,13 +16,10 @@ const Card = () => {
       const response = await fetch("./data/data.json");
       const data = await response.json();
       setData(data);
-      console.log(data[0][state]);
     } catch (err) {
       (err) => console.log(err);
     }
   };
-
-  console.log(state);
 
   React.useEffect(() => {
     getData();
