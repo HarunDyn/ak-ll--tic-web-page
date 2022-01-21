@@ -1,8 +1,31 @@
 const categories = document.querySelector(".categories");
+const karmaButton = document.querySelector(".logo");
+const path = document.getElementById("path");
+const drpCateg = document.getElementById("drp-categ");
 
 const Card = () => {
-  const [state, setState] = React.useState("Beyaz Eşya");
+  const [state, setState] = React.useState("");
   const [data, setData] = React.useState(false);
+
+  const getDataJq = function () {
+    $.getJSON(
+      "https://61eabfcc7ec58900177cd9cc.mockapi.io/api/products",
+      function (data, status) {
+        setData(data);
+        if (state !== "") {
+          const initCat = data.filter((item) => item.categories === state);
+          setData(initCat);
+          path.innerHTML = `<i class="fas fa-chevron-right" style="font-size: 0.7rem"></i> ${state}`;
+          drpCateg.innerHTML = `${state}`;
+        } else {
+          path.innerHTML = ``;
+          drpCateg.innerText = "Anasayfa";
+        }
+      }
+    );
+  };
+
+  karmaButton.addEventListener("click", () => setState(""));
 
   categories.addEventListener("click", (e) => {
     let value = e.target.innerHTML;
@@ -11,24 +34,36 @@ const Card = () => {
     }
   });
 
-  const getData = async () => {
-    try {
-      const response = await fetch("./data/data.json");
-      const data = await response.json();
-      setData(data);
-    } catch (err) {
-      (err) => console.log(err);
-    }
-  };
+  // const getDataRct = async () => {
+  //   try {
+  //     const response = await fetch(
+  //       "https://61eabfcc7ec58900177cd9cc.mockapi.io/api/products"
+  //     );
+  //     const data = await response.json();
+  //     setData(data);
+  //     if (state !== "") {
+  //       const initCat = data.filter((item) => item.categories === state);
+  //       setData(initCat);
+  //       path.innerHTML = `<i class="fas fa-chevron-right" style="font-size: 0.7rem"></i> ${state}`;
+  //       drpCateg.innerHTML = `${state}`;
+  //     } else {
+  //       path.innerHTML = ``;
+  //       drpCateg.innerText = "Anasayfa";
+  //     }
+  //   } catch (err) {
+  //     (err) => console.log(err);
+  //   }
+  // };
 
   React.useEffect(() => {
-    getData();
-  }, []);
+    getDataJq();
+    // getDataRct();
+  }, [state]);
 
   return data ? (
     <div className="card">
-      {data[0][state].map((item, index) => (
-        <div className="productCard" key={index}>
+      {data.map((item, index) => (
+        <div className="productCard" key={item.id}>
           <img src={item.imageUrl} alt={item.name} />
           <div className="priceName">
             <p>{item.name}</p>
@@ -53,7 +88,9 @@ const Card = () => {
       ))}
     </div>
   ) : (
-    <h1>Loading</h1>
+    <div id="spinner">
+      <i class="fas fa-spinner"></i>
+    </div>
   );
 };
 

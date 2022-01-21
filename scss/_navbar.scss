@@ -36,12 +36,13 @@
 #nav-bottom {
     display: flex;
     justify-content: space-around;
-    padding: 1rem 0.4rem;
+    padding: 1rem;
 
     .logo {
         display: flex;
         margin-left: 2rem;
         margin-right: 2rem;
+        cursor: pointer;
 
         #logo-icon i {
             font-size: 3rem;
@@ -172,11 +173,14 @@
     .sign-cart {
         display: flex;
 
+
         .sign-up {
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            text-decoration: none;
+            color: rgb(27, 27, 27);
 
             i {
                 margin-right: 0.5rem;
@@ -249,7 +253,7 @@
                 }
 
                 #down {
-                    display: none;
+                    border: none;
                 }
             }
 
@@ -262,6 +266,9 @@
             align-items: center;
             margin-right: 7rem;
             margin-left: 2rem;
+            text-decoration: none;
+            color: rgb(27, 27, 27);
+
 
             i {
                 margin-right: 0.5rem;
@@ -333,7 +340,7 @@
 }
 
 .categories {
-    padding: 1rem 3rem;
+    padding: 0.5rem 1rem;
     background-color: $primary-color;
 
     ul {
@@ -376,5 +383,15 @@
 
             }
         }
+    }
+}
+
+.pathCategories {
+    padding: 0.5rem 1rem;
+    background-color: rgb(231, 231, 231);
+    font-size: 1rem;
+
+    #path {
+        font-weight: 600;
     }
 }

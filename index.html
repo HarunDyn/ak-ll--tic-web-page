@@ -45,21 +45,21 @@
         <div><i class="fas fa-search"></i></div>
       </div>
       <div class="sign-cart">
-        <div class="sign-up">
+        <a class="sign-up" href="./registerPage/register.html">
           <i class="fas fa-user-plus"></i>
           <div id="sign">
             <h3>Giriş Yap</h3>
             <p>veya üye ol</p>
           </div>
           <i class="fas fa-chevron-down" id="down"></i>
-        </div>
-        <div class="cart">
+        </a>
+        <a class="cart" href="./cartPage/cart.html">
           <i class="fas fa-shopping-cart"></i>
           <div id="cart">
             <h3>Sepet</h3>
             <p>0.00TL</p>
           </div>
-        </div>
+        </a>
       </div>
     </nav>
     <section class="categories">
@@ -72,6 +72,49 @@
         <li class="category">Mutfak Gereçleri</li>
       </ul>
     </section>
+
+    <!-- path categories -->
+    <section class="pathCategories">
+      <span>Anasayfa</span>
+      <!-- <i class="fas fa-chevron-right" style="font-size: 0.7rem"></i>-->
+      <span id="path"></span>
+    </section>
+
+    <!-- droplist -->
+
+    <section class="droplist">
+      <p>
+        <span id="drp-categ">Beyaz Eşya</span> kategorisi içeriğindeki ürünler
+        listeleniyor
+      </p>
+      <div class="droplist-line">
+        <div class="droplist-line-drop">
+          <form action="#">
+            <select
+              name="ürünler"
+              id="ürün"
+              aria-placeholder="En son eklenen ürünlere göre"
+            >
+              <option value="ürün" disabled selected>
+                En son eklenenlere göre
+              </option>
+            </select>
+          </form>
+
+          <form action="#">
+            <select name="ürünler" id="ürün">
+              <option value="ürünler" disabled selected>Tüm Ürünler</option>
+            </select>
+          </form>
+        </div>
+        <div class="icons">
+          <i class="fas fa-table"></i>
+          <i class="fas fa-list"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- productss -->
     <div id="products"></div>
 
     <!--Pagination bootstrap-->

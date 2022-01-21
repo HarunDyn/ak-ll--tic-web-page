@@ -49,3 +49,58 @@ body {
         }
     }
 }
+
+
+.droplist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 4rem;
+    margin-left: 2rem;
+
+    p {
+        margin: auto;
+        margin-bottom: 3rem;
+
+        span {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+    }
+
+    .droplist-line {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+
+        .droplist-line-drop {
+            display: flex;
+
+            form {
+                select {
+                    width: 17rem;
+                    margin-right: 4rem;
+                    padding: 0.5rem;
+                }
+            }
+        }
+
+        .icons {
+            display: flex;
+
+            i {
+                font-size: 1.5rem;
+                margin-right: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+#spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

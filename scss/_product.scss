@@ -1,13 +1,15 @@
 .card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 3rem;
-    margin: 5rem;
+    gap: 1rem;
+    margin: 2rem;
     padding: 1rem 0.3rem;
+    border: none;
+
 
     .productCard {
         position: relative;
-        max-width: 15rem;
+        width: 17rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -126,7 +128,15 @@
     @include respond(small) {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 1rem;
-        padding: 1rem 0.3rem;
+        margin-left: 8rem;
+        gap: 2rem;
+        padding: 2rem 1rem;
     }
+}
+
+#spinner {
+    font-size: 10rem;
+    display: block;
+    margin: auto;
+
 }
