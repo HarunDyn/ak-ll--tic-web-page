@@ -813,8 +813,8 @@ footer .copyRight img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0.4rem 0.2rem;
-  margin-bottom: 1rem;
+  margin: 0.2rem 0.2rem;
+  margin-bottom: 0.8rem;
 }
 
 .card .productCard .detailsCard .icondetails .fa-cart-plus {
@@ -841,6 +841,7 @@ footer .copyRight img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1.1rem;
+  cursor: pointer;
 }
 
 .card .productCard .detailsCard .incele span {
@@ -849,6 +850,7 @@ footer .copyRight img {
 
 .card .productCard .detailsCard i {
   cursor: pointer;
+  font-size: 1.4rem;
 }
 
 .card .productCard:hover .priceName {
