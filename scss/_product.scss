@@ -89,6 +89,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin-bottom: 1.1rem;
 
                 span {
                     margin-right: 0.3rem;
@@ -116,6 +117,10 @@
 
         }
 
+        @include respond(small) {
+            width: 23rem;
+        }
+
     }
 
     @include respond(medium) {
@@ -128,8 +133,8 @@
     @include respond(small) {
         display: grid;
         grid-template-columns: 1fr;
-        margin-left: 8rem;
-        gap: 2rem;
+        margin-left: 2rem;
+        gap: 1rem;
         padding: 2rem 1rem;
     }
 }

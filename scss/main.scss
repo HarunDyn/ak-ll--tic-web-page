@@ -84,6 +84,19 @@ body {
                     padding: 0.5rem;
                 }
             }
+
+            @include respond(small) {
+                flex-direction: column;
+
+                form {
+                    select {
+                        width: 17rem;
+                        margin-bottom: 1rem;
+                        padding: 0.5rem;
+                    }
+                }
+
+            }
         }
 
         .icons {

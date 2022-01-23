@@ -344,6 +344,7 @@
 }
 
 .categories ul li {
+  width: 100%;
   margin-right: 2rem;
   color: white;
   cursor: pointer;
@@ -365,16 +366,27 @@
 
 @media (max-width: 600px) {
   .categories {
-    padding: 0.5rem 1rem;
+    background-color: white;
   }
   .categories ul {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .categories ul li {
-    margin-right: 0.6rem;
-    font-size: 0.5rem;
+    width: 100vw;
+    background-color: #ff0202;
+    margin-bottom: 0.1rem;
+    margin-left: 2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -826,6 +838,7 @@ footer .copyRight img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 1.1rem;
 }
 
 .card .productCard .detailsCard .incele span {
@@ -850,6 +863,12 @@ footer .copyRight img {
           flex-direction: column;
 }
 
+@media (max-width: 600px) {
+  .card .productCard {
+    width: 23rem;
+  }
+}
+
 @media (max-width: 768px) {
   .card {
     display: -ms-grid;
@@ -867,8 +886,8 @@ footer .copyRight img {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    margin-left: 8rem;
-    gap: 2rem;
+    margin-left: 2rem;
+    gap: 1rem;
     padding: 2rem 1rem;
   }
 }
@@ -975,6 +994,20 @@ body {
   width: 17rem;
   margin-right: 4rem;
   padding: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .droplist .droplist-line .droplist-line-drop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .droplist .droplist-line .droplist-line-drop form select {
+    width: 17rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
 }
 
 .droplist .droplist-line .icons {

@@ -343,12 +343,15 @@
     padding: 0.5rem 1rem;
     background-color: $primary-color;
 
+
     ul {
 
         display: flex;
         list-style-type: none;
 
+
         li {
+            width: 100%;
             margin-right: 2rem;
             color: $white;
             cursor: pointer;
@@ -371,15 +374,21 @@
     }
 
     @include respond(small) {
-        padding: 0.5rem 1rem;
-
+        background-color: white;
 
         ul {
-            justify-content: space-between;
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             li {
-                margin-right: 0.6rem;
-                font-size: 0.5rem;
+                width: 100vw;
+                background-color: $primary-color;
+                margin-bottom: 0.1rem;
+                margin-left: 2rem;
+                padding: 0.5rem;
+                font-size: 1rem;
 
             }
         }
