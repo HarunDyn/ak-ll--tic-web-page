@@ -133,7 +133,7 @@
     @include respond(small) {
         display: grid;
         grid-template-columns: 1fr;
-        margin-left: 2rem;
+        margin-left: 5rem;
         gap: 1rem;
         padding: 2rem 1rem;
     }

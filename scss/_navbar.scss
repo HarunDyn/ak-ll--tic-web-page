@@ -347,11 +347,11 @@
     ul {
 
         display: flex;
+        justify-content: left;
         list-style-type: none;
 
 
         li {
-            width: 100%;
             margin-right: 2rem;
             color: $white;
             cursor: pointer;
@@ -375,20 +375,19 @@
 
     @include respond(small) {
         background-color: white;
+        padding: 0;
 
         ul {
-
             flex-direction: column;
-            justify-content: center;
+            justify-content: left;
             align-items: center;
 
             li {
-                width: 100vw;
+                width: 100%;
                 background-color: $primary-color;
                 margin-bottom: 0.1rem;
-                margin-left: 2rem;
-                padding: 0.5rem;
-                font-size: 1rem;
+                padding: 0.3rem 1rem;
+                font-size: 0.9rem;
 
             }
         }

@@ -340,11 +340,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   list-style-type: none;
 }
 
 .categories ul li {
-  width: 100%;
   margin-right: 2rem;
   color: white;
   cursor: pointer;
@@ -367,26 +369,26 @@
 @media (max-width: 600px) {
   .categories {
     background-color: white;
+    padding: 0;
   }
   .categories ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .categories ul li {
-    width: 100vw;
+    width: 100%;
     background-color: #ff0202;
     margin-bottom: 0.1rem;
-    margin-left: 2rem;
-    padding: 0.5rem;
-    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -886,7 +888,7 @@ footer .copyRight img {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    margin-left: 2rem;
+    margin-left: 5rem;
     gap: 1rem;
     padding: 2rem 1rem;
   }
@@ -1020,6 +1022,22 @@ body {
   font-size: 1.5rem;
   margin-right: 1rem;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .droplist .droplist-line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 6rem;
+  }
 }
 
 #spinner {
