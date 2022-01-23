@@ -9,7 +9,7 @@
 
     .productCard {
         position: relative;
-        width: 17rem;
+        width: 18rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -67,7 +67,7 @@
                 justify-content: space-between;
                 align-items: center;
                 margin: 0.2rem 0.2rem;
-                margin-bottom: 0.8rem;
+                margin-bottom: 0.7rem;
 
                 .fa-cart-plus {
                     background-color: $primary-color;

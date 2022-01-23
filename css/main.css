@@ -734,7 +734,7 @@ footer .copyRight img {
 
 .card .productCard {
   position: relative;
-  width: 17rem;
+  width: 18rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -814,7 +814,7 @@ footer .copyRight img {
       -ms-flex-align: center;
           align-items: center;
   margin: 0.2rem 0.2rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.7rem;
 }
 
 .card .productCard .detailsCard .icondetails .fa-cart-plus {
